@@ -1,0 +1,220 @@
+body{
+    background-color: #e2dadb;
+}
+div{
+    display: block;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+a:hover, a:active {
+    color:#635255;
+    text-decoration: none;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 200px;
+    background-color:white;
+    color: #d5b0ac;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: small;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 50%;
+    margin-left: 350px;
+    }
+.tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+.header{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 9%;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: #d5b0ac;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+.now{
+    color:#635255;
+}
+.my_name{
+    color:#635255;
+    font-size: 35px;
+    padding-bottom: 2px;
+    float: left;
+    cursor: pointer;
+    margin-left: 100px;
+    font-family: 'Rajdhani', sans-serif;
+    display:flex;
+
+}
+
+.header-container{
+    padding-left: 30px;
+}
+
+.header-section{
+    float: left;
+    margin-left: 50px;
+    font-size: 23px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    display:flex;
+}
+.icon-section{
+    float: left;
+    margin-left: 30px;
+    font-size: 23px;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    display:inline-flex;
+}
+
+.about-container{
+    padding-top: 125px;
+    padding-bottom: 20px;
+    margin-right: 11%;
+    margin-left: 11%;
+    display: flex;
+}
+
+.bio-pic{
+    display: block;
+    max-width: 400px;
+    align-self: start;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.bio-info{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    color: #635255;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.bio-size{
+    font-size: 20px;
+}
+
+.experience-container {
+    padding-top: 125px;
+    padding-bottom: 20px;
+    margin-right: 11%;
+    margin-left: 11%;
+    display: flex;
+}
+.experience-section-left{
+    color: #635255;
+    font-family: 'Rajdhani', sans-serif;
+    width: 600px;
+}
+
+.experience-section-right{
+    color: #635255;
+    font-family: 'Rajdhani', sans-serif;
+    width: 600px;
+    padding-left: 125px;
+}
+
+ul{
+    list-style-type: circle;
+  }
+  
+  
+
+
+.experience-pic {
+  
+    width:350px;
+    height:225px;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 40px;
+    padding-left: 35px;
+    
+}
+
+.project-container{
+    padding-top: 125px;
+    padding-bottom: 20px;
+    margin-right: 11%;
+    margin-left: 11%;
+    display: flex;
+    
+}
+
+.project-section{
+    color: #635255;
+    font-family: 'Rajdhani', sans-serif;
+    max-width: 600px;   
+
+}
+
+.project-pic{
+    width:330px;
+    height:200px;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 100px;
+}
+
+.project-pic:hover{
+    opacity: 0.7;
+}
+
+button{
+    background-color:  #d5b0ac;
+    border: none;
+    color: white;
+    padding: 7px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+
+
+.footer{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-top: auto;
+    text-align: center;
+    color: #d5b0ac;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
