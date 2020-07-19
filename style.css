@@ -1,9 +1,6 @@
+
 body{
     background-color: #e2dadb;
-}
-
-div{
-    display: block;
 }
 
 a:link, a:visited {
@@ -28,44 +25,39 @@ a:hover, a:active {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    top: 70%;
     left: 50%;
-    margin-left: 350px;
+    margin-left: 150px;
     }
 .tooltip:hover .tooltiptext {
         visibility: visible;
     }
 
 .header{
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 9%;
+    color: white; 
     position: fixed;
     top:0;
     left:0;
     width: 100%;
     background-color: #d5b0ac;
-    display:flex;
-    align-items: center;
     text-decoration: none;
     font-family: 'Rajdhani', sans-serif;
     
 }
 
-.now{
-    color:#635255;
+.main-nav li{
+    list-style-type: none;
+    text-align: center;
+    margin: 15px auto;
 }
-.my_name{
-    color:#635255;
-    font-size: 35px;
-    padding-bottom: 2px;
-    float: left;
-    cursor: pointer;
-    margin-left: 100px;
-    font-family: 'Rajdhani', sans-serif;
-    display:flex;
 
+.my_name{
+    display: inline-block;
+    color:#635255;
+    font-size: 30px;   
+    cursor: pointer;  
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 nav{
@@ -73,46 +65,48 @@ nav{
 }
 
 .header-section{
-    float: left;
-    margin-left: 50px;
     font-size: 23px;
     cursor: pointer;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 3px;
-    display:flex;
-}
-.icon-section{
-    float: left;
-    margin-left: 30px;
-    font-size: 23px;
-    cursor: pointer;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 3px;
-    display:inline-flex;
 }
 
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    cursor: pointer; 
+    font-size: 24px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+.active {
+    display: block;
+  }
+
+
 .about-container{
-    padding-top: 125px;
+    padding-top: 10%;
     padding-bottom: 20px;
     margin-right: 11%;
     margin-left: 11%;
-    display: flex;
+    
 }
 
 .bio-pic{
     display: block;
-    max-width: 400px;
     align-self: start;
     height: auto;
-    margin-top: 20px;
-    margin-right: 40px;
-    margin-left: 40px;
+    padding-top: 5%;
+    width: 100%;
 }
 
 .bio-info{
-    padding-top: 40px;
+   
     padding-bottom: 20px;
     padding-left: 20px;
     color: #635255;
@@ -128,30 +122,27 @@ nav{
     padding-bottom: 20px;
     margin-right: 11%;
     margin-left: 11%;
-    display: flex;
+    
 }
 .experience-section-left{
     color: #635255;
     font-family: 'Rajdhani', sans-serif;
-    width: 600px;
+    
 }
 
 .experience-section-right{
     color: #635255;
     font-family: 'Rajdhani', sans-serif;
-    width: 600px;
-    padding-left: 125px;
+    
+    
 }
 
-ul{
+.experience-container ul{
     list-style-type: circle;
   }
   
   
-
-
 .experience-pic {
-  
     width:350px;
     height:225px;
     display: flex;
@@ -219,5 +210,66 @@ footer{
     position: absolute;
     width: 100%;
     height: 2.5rem;   
+    
+}
+
+.icon-container{
+    padding-bottom: 20px;
+}
+
+.icon-section1{
+    font-size: 35px;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.icon-section{
+    margin-left: 90px;
+    font-size: 35px;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+   
+}
+
+
+
+@media screen and (min-width: 650px) {
+    .about-container, .experience-container , .project-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 5%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .header-section {
+        margin-left: 40px;
+    }
+    .my_name {
+        margin-top: 0;
+    }
+   .navbar-toggle {
+       display: none;
+    }
+    
     
 }

@@ -7,36 +7,41 @@
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
 <body>
 
-    <header class="header">
+    <nav class="header">
 
-        <b class="my_name">Eveline Xie </b>
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </span>
 
-        <nav>
-            <a class="header-section" href="index.html">About Me</a>
-            <a class="header-section" href="experience.html">Experience</a>
-            <a class="header-section" href="projects.html">Projects</a>
+        <a class="my_name">Eveline Xie </a>
+        
+        <ul class = "main-nav " id="js-menu">
+            <li>
+                <a class="header-section" href="index.html">About Me</a>
+            </li>
+            <li>
+                <a class="header-section" href="experience.html">Experience</a>
+            <li>
+                <a class="header-section" href="projects.html">Projects</a>
+            </li>
+            <li>
+                <a class="header-section" href="resume.pdf" target="_blank">Resume</a>
+            </li>
             
-            <a class="header-section" href="resume.pdf" target="_blank">Resume</a>
-                
-            <a href="https://www.linkedin.com/in/yang-eveline-xie/" class="icon-section" target="_blank">
-                    <i class="fa fa-linkedin"></i></a>
-            <a href="mailto:eveline.yang.xie@gmail.com" class="icon-section"><i class="fa fa-envelope tooltip">
-                    <span class="tooltiptext">eveline.yang.xie@gmail.com</span></i></a>
-            <a href = "https://github.com/eveline-xie" class="icon-section" target="_blank"><i class="fa fa-github"></i></a>
-        </nav>
+        </ul>
 
-    </header>
-
+    </nav>
+    
     <main class="about-container">
-
+        <div >
         <img class="bio-pic" src="profile.jpeg">
-
+        </div>
         <div class="bio-info">
             <h1>Hi, I'm Eveline!</h1>
 
@@ -55,8 +60,21 @@
     </main>
 
 
-    <footer >site from scratch by Eveline :) </footer>
+    <footer >
+        
+        <div class="icon-container">
+            <a href="https://www.linkedin.com/in/yang-eveline-xie/" class="icon-section1" target="_blank">
+                <i class="fa fa-linkedin"></i></a>
+            <a href="mailto:eveline.yang.xie@gmail.com" class="icon-section"><i class="fa fa-envelope tooltip">
+                <span class="tooltiptext">eveline.yang.xie@gmail.com</span></i></a>
+            <a href = "https://github.com/eveline-xie" class="icon-section" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
 
+        <p>site from scratch by Eveline :)</p>
+    </footer>
+    
+   
+    <script src="script.js"></script>
 </body>
 </html>
 
