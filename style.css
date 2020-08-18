@@ -25,8 +25,7 @@ a:hover, a:active {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    left: 50%;
-    margin-left: 150px;
+    bottom: 5px;
     }
 .tooltip:hover .tooltiptext {
         visibility: visible;
@@ -37,11 +36,10 @@ a:hover, a:active {
     position: fixed;
     top:0;
     left:0;
-    width: 100%;
     background-color: #d5b0ac;
     text-decoration: none;
     font-family: 'Rajdhani', sans-serif;
-    
+    position: sticky;
 }
 
 .main-nav li{
@@ -90,7 +88,7 @@ nav{
 
 
 .about-container{
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 20px;
     margin-right: 11%;
     margin-left: 11%;
@@ -103,6 +101,7 @@ nav{
     height: auto;
     padding-top: 5%;
     width: 100%;
+    order: 1;
 }
 
 .bio-info{
@@ -111,6 +110,7 @@ nav{
     padding-left: 20px;
     color: #635255;
     font-family: 'Rajdhani', sans-serif;
+    order: 2;
 }
 
 .bio-size{
@@ -118,7 +118,7 @@ nav{
 }
 
 .experience-container {
-    padding-top: 125px;
+    padding-top: 5%;
     padding-bottom: 20px;
     margin-right: 11%;
     margin-left: 11%;
@@ -153,11 +153,11 @@ nav{
 }
 
 .project-container{
-    padding-top: 125px;
+    padding-top: 80px;
     padding-bottom: 20px;
     margin-right: 11%;
     margin-left: 11%;
-    display: flex;
+    /* display: flex; */
     
 }
 
@@ -165,16 +165,15 @@ nav{
     color: #635255;
     font-family: 'Rajdhani', sans-serif;
     max-width: 600px;   
-
+    order:1;
 }
 
 .project-pic{
-    width:330px;
-    height:200px;
+    width:230px;
     display: flex;
     margin-top: 20px;
-    margin-right: 40px;
-    margin-left: 100px;
+    margin-right: 40px; 
+    order:2;
 }
 
 .project-pic:hover{
@@ -202,19 +201,18 @@ button:hover{
 
 
 footer{
-    padding-top: 25px;
-    margin-top: auto;
+    padding-top: 10%;
     text-align: center;
     color: #d5b0ac;
     font-family: 'Rajdhani', sans-serif;
-    position: absolute;
-    width: 100%;
     height: 2.5rem;   
+    width: auto;
     
 }
 
 .icon-container{
     padding-bottom: 20px;
+    
 }
 
 .icon-section1{
@@ -226,9 +224,9 @@ footer{
 }
 
 .icon-section{
-    margin-left: 90px;
     font-size: 35px;
     cursor: pointer;
+    margin-left: 50px;
     padding-left: 5px;
     padding-right: 5px;
    
@@ -236,15 +234,30 @@ footer{
 
 
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 800px) {
     .about-container, .experience-container , .project-container{
         display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 5%;
-  }
+    }
+    .icon-section{
+        text-align: center;
+        margin-left: 90px;
+    }
+    .experience-section-left{
+        width:140%;
+    }
+    .experience-section-right{
+        width: 70%;
+        padding-left: 130px;
+    }
+    .project-pic{
+        height: 200px;
+        width: 300px;
+    }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 921px) {
     .header {
         display: flex;
         justify-content: space-between;
